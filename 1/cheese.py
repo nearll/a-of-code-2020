@@ -3,7 +3,6 @@ with open('input.txt', 'r') as input:
     for number in input:
         inputs.append(int(number.rsplit()[0]))
 
-
 for first_value in inputs:
     if first_value < 2020:
         for second_value in inputs:

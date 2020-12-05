@@ -1,10 +1,6 @@
 class Traverse:
 
-    def traverse(across, down):
-        inputs = []
-        with open('input.txt', 'r') as input:
-            for path in input:
-                inputs.append(path.rsplit())
+    def traverse(across, down, inputs):
         location = 1 
         trees = 0
         level_number = 0
@@ -22,11 +18,15 @@ class Traverse:
         return trees
 
     if __name__ == "__main__":
-        first = traverse(1, 1)
-        second = traverse(3, 1)
-        third = traverse(5,1)
-        fourth = traverse(7,1)
-        fifth = traverse(1,2)
+        inputs = []
+        with open('input.txt', 'r') as input:
+            for path in input:
+                inputs.append(path.rsplit())
+        first = traverse(1, 1, inputs)
+        second = traverse(3, 1, inputs)
+        third = traverse(5, 1, inputs)
+        fourth = traverse(7, 1, inputs)
+        fifth = traverse(1, 2, inputs)
         print('Traversal found the following number of trees:')
         print(first)
         print(second)
