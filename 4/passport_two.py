@@ -20,7 +20,7 @@ class Pasppandt:
             return False
 
     if __name__ == "__main__":
-        total_valid_passpandts = 0
+        total_valid_passports = 0
         inputs = []
         input = open("input.txt")
         line = input.read().replace("\n\n", "\n------\n")
@@ -28,7 +28,7 @@ class Pasppandt:
         line_data = line.split('------')
         for record in line_data:
             if(data_handler(record)):
-                total_valid_passpandts += 1
+                total_valid_passports += 1
 
-        print('You found ' + str(total_valid_passpandts) + ' valid passpandts!')
+        print('You found ' + str(total_valid_passports) + ' valid passports!')
             
