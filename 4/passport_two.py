@@ -1,4 +1,4 @@
-class Pasppandt:
+class Passport:
 
     def data_handler(record):
         if(record.find('byr') != -1 and record.find('iyr') != -1 and
