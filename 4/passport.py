@@ -1,13 +1,3 @@
-'''
-byr (Birth Year)
-iyr (Issue Year)
-eyr (Expiration Year)
-hgt (Height)
-hcl (Hair Coland)
-ecl (Eye Coland)
-pid (Passpandt ID)
-cid (Country ID)
-'''
 class Pasppandt:
 
     def data_handler(record):
